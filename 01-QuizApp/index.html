@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    
+    <!-- Estilização -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <div class="start" id="start-screen">
+        <h1 class="start__title">Olá, seja bem vindo ao QuizApp!</h1>
+        <button class="start__button" id="start-button">Iniciar Quiz</button>
+    </div>
+    <div class="instructions hide" id="instructions">
+        <h1 class="instructions__title">Como funciona o QuizApp:</h1>
+        <h3 class="instructions__subtitle">O QuizApp é um Quiz com 10 questões voltadas a cultura nerd, geek, gamer etc.</h3>
+        <h3 class="instructions__subtitle">1. Leia a questão indicada</h3>
+        <h3 class="instructions__subtitle">2. Marque a resposta que você achar estar correta</h3>
+        <h3 class="instructions__subtitle">3. Após isso, clique para ir para a próxima questão</h3>
+        <h3 class="instructions__subtitle">4. Você ganha 10 Pontos por cada questão certa.  </h3>
+        <button class="start__button" id="instructions-button">Começar</button>
+    </div>
+    <div class="questions-container hide" id="questions-container">
+        <img src="" alt="" class="question-image" id="question-img">
+        <h3 class="question-number" id="question-number"></h3>
+        <p class="question-title" id="question"></p>
+        
+        <div class="answer-buttons" id="answer-buttons">
+            
+        </div>
+    </div>
+    <div class="final-screen hide" id="final-screen">
+        <h1 class="instructions__title">Parabéns! Voce finalizou o QuizApp.</h1>
+        <h3 class="instructions__subtitle" id="final-points">Você fez uma pontuação total de:</h3>
+        <button class="start__button" id="restart-button">Reiniciar jogo</button>
+    </div>
+    <h4 class="points hide" id="points">Pontos:</h4>
+
+    
+    <!-- Script -->    
+    <script src="script.js"></script>
+</body>
+</html>
