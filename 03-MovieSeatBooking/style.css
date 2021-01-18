@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F0EF;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 40px  auto;
+    border: 1px solid black;
+    width: 100%;
+}
+
+select {
+    width: 30%;
+    margin: 0 0 5px 0;
+    border: none;
+    background-color: #fff;
+    padding: 10px 15px;
+}
+
+label {
+    color: #D88A02;  
+}
+
+h4 {
+    margin: 0 0 5px 0;
+    color: #D88A02;
+}
+
+h4 span {
+    color: #000000;
+}
+
+.seats-status {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 0 30px 0;
+}
+
+.seat-status {
+    margin: 0 0 10px 0;
+    text-align: center;
+    height: 40px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.screen {
+    width: 75%;
+    color: #fff;
+    text-align: center;
+    background-color: #D88A02;
+    margin: 0 0 30px 0;
+    border-radius: 3px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px 10px;
+}
+
+.row span {
+    margin: 0 10px 0 0;
+    align-self: center; 
+}
+
+.seat {
+    background-color: #94938F;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    color: #fff;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.available {
+    background-color: #94938F;
+}
+
+.sold {
+    background-color: #d90202;
+}
+
+.selected {
+    background-color: #3b3b3a;
+}
+
+
+/*** responsive ***/
+@media screen and (max-width: 700px) {
+    .container {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .seats-status {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+}
+
