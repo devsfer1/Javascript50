@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS Libraries -->
+    <script src="https://kit.fontawesome.com/6465650075.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <video src="Video.mp4" id="video"></video>
+    <input 
+        type="range" 
+        name="" 
+        id="progress" 
+        class="progress" 
+        min="0" 
+        max="100" 
+        step="0.1" 
+        value="0">
+    <div class="controls">
+        <button id="play">
+            <i class="fa fa-play"></i>
+        </button>
+        <button id="pause">
+            <i class="fa fa-pause"></i>
+        </button>
+        <button id="stop">
+            <i class="fa fa-stop"></i>
+        </button>
+        <div class="controls-end">
+            <span class="timestamp" id="timestamp">00:00</span>
+             <button id="fullscreen">
+                <i class="fas fa-compress"></i>
+             </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
