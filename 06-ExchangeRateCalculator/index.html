@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exchange Rate Calculator</title>
+
+    <!-- Estilização-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Conversor de Moedas 💰</h1>
+        <div class="item">
+            <p>Insira um valor:</p>
+            <input type="number" id="input_1">
+            <p>Converter de:</p>
+            <select name="" id="exchangeRate_1">
+                <option value="EUR">EUR</option>
+                <option value="BRL" selected>BRL</option>
+                <option value="AUD">AUD</option>
+                <option value="GBP">GBP</option>
+                <option value="CAD">CAD</option>
+                <option value="USD">USD</option>
+                <option value="JPY">JPY</option>
+                <option value="PHP">PHP</option>
+                <option value="NOK">NOK</option>
+                <option value="ZAR">ZAR</option>
+            </select>
+        </div>
+        <button id="swap-btn">Trocar</button>
+        <div class="item">
+            <input type="number" id="input_2">
+            <p>Para:</p>
+            <select name="" id="exchangeRate_2">
+                <option value="EUR">EUR</option>
+                <option value="BRL">BRL</option>
+                <option value="AUD">AUD</option>
+                <option value="GBP">GBP</option>
+                <option value="CAD">CAD</option>
+                <option value="USD">USD</option>
+                <option value="JPY">JPY</option>
+                <option value="PHP">PHP</option>
+                <option value="NOK">NOK</option>
+                <option value="ZAR">ZAR</option>
+            </select>
+        </div>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
